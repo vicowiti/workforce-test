@@ -14,6 +14,7 @@ const NavBar = () => {
           <Typography
             component="h2"
             sx={{
+              fontWeight: "600",
               fontSize: "1.5rem",
             }}
           >
