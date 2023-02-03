@@ -3,6 +3,7 @@ import RenderData from "./components/RenderData";
 import SearchBar from "./components/SearchBar";
 import { JobPost } from "./utils/data";
 import mydata from "./assets/job-data.json";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [jsonData, setJsonData] = useState<JobPost[]>(mydata);
@@ -24,6 +25,7 @@ const App = () => {
   }, [searchTerm, jsonData]);
   return (
     <div>
+      <NavBar />
       <SearchBar value={searchTerm} setSearch={setSearchTerm} />
       <RenderData data={filteredData} />
     </div>
