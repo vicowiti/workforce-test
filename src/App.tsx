@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar";
 import { JobPost } from "./utils/data";
 import mydata from "./assets/job-data.json";
 import NavBar from "./components/NavBar";
+import { Grid, Stack } from "@mui/material";
 
 const App = () => {
   const [jsonData, setJsonData] = useState<JobPost[]>(mydata);
@@ -26,8 +27,14 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <SearchBar value={searchTerm} setSearch={setSearchTerm} />
-      <RenderData data={filteredData} />
+      <Grid container spacing={3}>
+        <Grid item xs={8}>
+          <RenderData data={filteredData} />
+        </Grid>
+        <Grid item xs={4}>
+          <SearchBar value={searchTerm} setSearch={setSearchTerm} />
+        </Grid>
+      </Grid>
     </div>
   );
 };

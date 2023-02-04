@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 body {
@@ -12,4 +13,9 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row-reverse;
 }

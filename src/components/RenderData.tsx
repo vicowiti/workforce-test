@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import React from "react";
 import { JobPost, RenderDataProps } from "../utils/data";
 import JobCard from "./JobCard";
