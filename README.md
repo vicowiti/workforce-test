@@ -2,4 +2,4 @@
 
 - Web app built using React and Material UI.
 
-<img src="./assets/demo.png" alt="site demo">
+<img src="./src/assets/demo.png" alt="site demo">

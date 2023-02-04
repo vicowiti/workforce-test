@@ -33,6 +33,7 @@ const JobCard = ({ job }: JobCardProps) => {
         gap={1}
         mb={1.5}
         alignItems="center"
+        color="secondary"
         sx={{ fontWeight: "500" }}
       >
         <LocationOnIcon color="primary" /> {job.location}
