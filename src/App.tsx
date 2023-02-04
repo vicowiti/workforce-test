@@ -30,7 +30,13 @@ const App = () => {
     <div>
       <NavBar />
       <Grid container spacing={{ lg: 3, xs: 1 }}>
-        <Grid item xs={12} lg={8} order={{ xs: 2, lg: 1 }}>
+        <Grid
+          item
+          xs={12}
+          sx={{ height: { lg: "100vh" }, overflow: "scroll" }}
+          lg={8}
+          order={{ xs: 2, lg: 1 }}
+        >
           <RenderData data={filteredData} />
         </Grid>
         <Grid item xs={12} lg={4} order={{ xs: 1, lg: 1 }}>
