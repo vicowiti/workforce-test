@@ -38,7 +38,7 @@ const SearchBar = ({ value, setSearch }: SearchBarProps) => {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <Stack sx={{ display: { xs: "none", lg: "block" } }}>
+          <Stack sx={{ display: { xs: "none", lg: "flex" } }}>
             <FormControl>
               <FormControlLabel control={<Checkbox />} label="Remote" />
               <FormControlLabel control={<Checkbox />} label="On Site" />
@@ -78,7 +78,7 @@ const SearchBar = ({ value, setSearch }: SearchBarProps) => {
             sx={{
               display: {
                 xs: "none",
-                lg: "block",
+                lg: "flex",
               },
             }}
             fullWidth

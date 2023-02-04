@@ -4,26 +4,10 @@ import SearchBar from "./components/SearchBar";
 import { JobPost } from "./utils/data";
 import mydata from "./assets/job-data.json";
 import NavBar from "./components/NavBar";
-import { Grid, makeStyles, Stack } from "@mui/material";
-
-// const useStyles = makeStyles({
-//   item1: {
-//     order: 2,
-//     "@media (max-width: 900px)": {
-//       order: 1,
-//     },
-//   },
-//   item2: {
-//     order: 1,
-//     "@media (max-width: 900px)": {
-//       order: 2,
-//     },
-//   },
-// });
+import { Grid } from "@mui/material";
 
 const App = () => {
-  // const classes = useStyles();
-  const [jsonData, setJsonData] = useState<JobPost[]>(mydata);
+  const [jsonData] = useState<JobPost[]>(mydata);
   const [filteredData, setFilteredData] = useState<JobPost[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
 
