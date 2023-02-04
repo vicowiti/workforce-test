@@ -18,7 +18,11 @@ const App = () => {
         (item) =>
           item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
           item.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          item.description.toLowerCase().includes(searchTerm.toLowerCase())
+          item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.requirements.some((element) =>
+            element.toLowerCase().includes(searchTerm.toLowerCase())
+          )
       )
     );
   }, [searchTerm, jsonData]);
