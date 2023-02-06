@@ -8,7 +8,7 @@ const NoData = () => {
         <img src={Search} alt="No data animation" width="300" />
       </div>
       <Typography
-        fontSize="3rem"
+        fontSize="1.5rem"
         fontWeight="600"
         textAlign="center"
         color="secondary"
